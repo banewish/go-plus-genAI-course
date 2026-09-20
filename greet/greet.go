@@ -5,8 +5,6 @@
 package greet
 
 import (
-	"fmt"
-	"os"
 	"strings"
 )
 
@@ -17,8 +15,4 @@ func Greet(name string) string {
 		return "Hello, stranger! Welcome to Go."
 	}
 	return "Hello, " + name + "! Welcome to Go."
-}
-
-func main() {
-	fmt.Println(Greet(strings.TrimSpace(os.Args[1])))
 }
