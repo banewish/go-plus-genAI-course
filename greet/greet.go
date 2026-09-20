@@ -1,3 +1,7 @@
+// Package greet містить логіку привітання користувача.
+//
+// Завдання 2: реалізуйте функцію Greet самостійно, вручну, без ШІ.
+// Автоматичні тести дивіться у файлі greet_test.go.
 package greet
 
 import (
@@ -6,20 +10,15 @@ import (
 	"strings"
 )
 
-func Greet(name string) {
-	
+func Greet(name string) string {
 	if name == "" {
-		fmt.Println("Welcome, stranger! Welcome to Go.")
+		return "Welcome, stranger! Welcome to Go."
 	} else {
-		fmt.Printf("Welcome, %s! Welcome to Go.\n", name)
+		return "Welcome, " + name + "! Welcome to Go.\n"
 	}
 }
 
 func main() {
-	if len(os.Args) < 2 {
-		fmt.Println("Usage: lesson1 <name>")
-		return
-	}
+	fmt.Println(Greet(strings.TrimSpace(os.Args[1])))
 
-	Greet(strings.TrimSpace(os.Args[1]))
 }
