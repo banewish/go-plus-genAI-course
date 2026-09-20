@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-// This is what i wrote by hand
+// This is what ai wrote for me
 func Greet(name string) string {
 	name = strings.TrimSpace(name)
 	if name == "" {
