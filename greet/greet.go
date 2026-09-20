@@ -5,20 +5,14 @@
 package greet
 
 import (
-	"fmt"
-	"os"
 	"strings"
 )
 
 func Greet(name string) string {
+	name = strings.TrimSpace(name)
 	if name == "" {
-		return "Welcome, stranger! Welcome to Go."
+		return "Hello, stranger! Welcome to Go."
 	} else {
-		return "Welcome, " + name + "! Welcome to Go.\n"
+		return "Hello, " + name + "! Welcome to Go."
 	}
-}
-
-func main() {
-	fmt.Println(Greet(strings.TrimSpace(os.Args[1])))
-
 }

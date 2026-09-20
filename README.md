@@ -1,1 +1,1 @@
--- From what i see, i wrote it a bit too complicated and AI made a bit shorter because he did cut fmt import and print because it already handles in main.go. So instead of trying printing, it did see handler and just passed the data so it can be tested or executed.
+-- From what i see, i wrote it a bit too complicated and AI made a bit shorter because he did cut fmt import and print because it already handles in main.go. So instead of trying printing, it did see handler and just passed the data so it can be tested or executed. 
