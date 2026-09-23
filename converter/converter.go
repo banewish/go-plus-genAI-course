@@ -21,5 +21,5 @@ func ConvertCurrency(amount float64, rate float64) (float64, error) {
 		return 0, errors.New("rate must be positive")
 	}
 	// TODO: замініть рядок нижче на реальний розрахунок
-	return 0, errors.New("not implemented")
+	return amount * rate, nil
 }
