@@ -5,14 +5,18 @@
 package greet
 
 import (
-	"strings"
+"fmt"
+"strings"
 )
 
-// This is what ai wrote for me
 func Greet(name string) string {
-	name = strings.TrimSpace(name)
-	if name == "" {
-		return "Hello, stranger! Welcome to Go."
-	}
-	return "Hello, " + name + "! Welcome to Go."
+name = strings.TrimSpace(name)
+if name == "" {
+return "Hello, stranger! Welcome to Go."
+}
+
+// Capitalize each word for better formatting
+name = strings.Title(strings.ToLower(name))
+
+return fmt.Sprintf("Hello, %s! Welcome to Go.", name)
 }
